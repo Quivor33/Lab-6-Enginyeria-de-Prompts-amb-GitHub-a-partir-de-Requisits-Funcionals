@@ -16,3 +16,65 @@
 .add-recipe-card textarea {
   min-height: 120px;
 }
+
+.inline-input-group {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.item-list {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.item-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7f7;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+}
+
+.remove-button {
+  border: none;
+  background: transparent;
+  color: #d94f4f;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 0;
+  cursor: pointer;
+}
+
+.field-error {
+  margin: 0.5rem 0 0;
+  color: #d94f4f;
+  font-size: 0.95rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.toast {
+  position: relative;
+  border-radius: 16px;
+  padding: 0.95rem 1rem;
+  font-weight: 700;
+  margin-top: 0.75rem;
+}
+
+.toast-success {
+  background: #e6f7ed;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
