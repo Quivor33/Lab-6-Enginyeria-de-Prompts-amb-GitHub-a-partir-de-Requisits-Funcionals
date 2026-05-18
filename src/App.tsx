@@ -29,7 +29,7 @@ function App() {
       <main className="app-main">
         <section className="app-column">
           <AddRecipeForm onAddRecipe={addRecipe} />
-          <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
+          <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} resultCount={filteredRecipes.length} />
           <EditRecipeForm recipe={editingRecipe} onSave={updateRecipe} onCancel={clearSelection} />
         </section>
 
