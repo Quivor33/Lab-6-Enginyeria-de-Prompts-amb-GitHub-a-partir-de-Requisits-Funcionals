@@ -1,0 +1,9 @@
+.search-bar-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-bar-card input {
+  min-height: 2.6rem;
+}

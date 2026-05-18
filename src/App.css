@@ -30,6 +30,12 @@
   gap: 1.5rem;
 }
 
+.app-column,
+.recipe-list-column {
+  display: grid;
+  gap: 1.5rem;
+}
+
 .card {
   background: #ffffff;
   border-radius: 18px;
@@ -78,34 +84,18 @@ button.primary {
   color: white;
 }
 
+button.secondary {
+  background: #7c8ba5;
+  color: white;
+}
+
 button.danger {
   background: #d94f4f;
   color: white;
 }
 
-.recipe-item {
-  border: 1px solid #ececec;
-  border-radius: 14px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-.recipe-item h3 {
-  margin: 0 0 0.5rem;
-}
-
-.recipe-info {
-  display: grid;
-  gap: 0.7rem;
-}
-
-.recipe-meta {
-  font-size: 0.9rem;
-  color: #666;
-}
-
 @media (min-width: 900px) {
   .app-main {
-    grid-template-columns: 1.25fr 1fr;
+    grid-template-columns: 1fr 1.2fr;
   }
 }

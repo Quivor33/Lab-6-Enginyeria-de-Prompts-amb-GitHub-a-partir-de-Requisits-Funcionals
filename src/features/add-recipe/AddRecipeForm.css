@@ -1,0 +1,18 @@
+.add-recipe-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add-recipe-card .form-group label {
+  font-weight: 600;
+}
+
+.add-recipe-card textarea,
+.add-recipe-card input {
+  min-height: 2.6rem;
+}
+
+.add-recipe-card textarea {
+  min-height: 120px;
+}
