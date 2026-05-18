@@ -1,4 +1,105 @@
+.delete-recipe-button-container {
+  position: relative;
+  display: inline-block;
+}
+
 .delete-recipe-button {
   padding: 0.9rem 1.2rem;
   border-radius: 14px;
+}
+
+.delete-recipe-confirmation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  animation: slideIn 0.2s ease-out;
+}
+
+.delete-recipe-confirmation-label {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.delete-recipe-confirmation-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.delete-recipe-confirm-btn,
+.delete-recipe-cancel-btn {
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.delete-recipe-confirm-btn {
+  background-color: #dc2626;
+  color: white;
+}
+
+.delete-recipe-confirm-btn:hover {
+  background-color: #b91c1c;
+}
+
+.delete-recipe-cancel-btn {
+  background-color: #e5e7eb;
+  color: #333;
+}
+
+.delete-recipe-cancel-btn:hover {
+  background-color: #d1d5db;
+}
+
+.delete-recipe-toast {
+  position: absolute;
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f97316;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  animation: slideUp 0.3s ease-out, slideDown 0.3s ease-in 2.7s forwards;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
 }
