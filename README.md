@@ -1,8 +1,10 @@
 # Lab-6-Enginyeria-de-Prompts-amb-GitHub-a-partir-de-Requisits-Funcionals
 
+https://github.com/Quivor33/Lab-6-Enginyeria-de-Prompts-amb-GitHub-a-partir-de-Requisits-Funcionals/
+
 Aquests són els prompts que hem utilitzat per generar el nostre projecte, un primer per inicialitzar la estructura base en la que el copilot també ha fet una versió bàsica d'algunes features, el segon prompt ha servit per redefinir l'estructura del projecte per així poder treballar les user stories per separat cada membre del grup i els següents prompts són per acabar de detallar les features ia existents o crear-ne de noves perquè compleixin les demandes de les històries de usuari.
 
-Prompt 1 (Estructura base del projecte):
+### Prompt 1 (Estructura base del projecte):
 
 Create a React application in TypeScript for a recipe management system. 
 The app should have a clean layout with a header showing "Gestió de Receptes", 
@@ -13,7 +15,7 @@ Each recipe should have: id, name, ingredients (array of strings), steps (array 
 Refactor the current project structure so that each of the 4 user stories 
 can be developed independently by different team members with minimal merge conflicts.
 
-Prompt 2 (Redefinir l’estructura del projecte per parts):
+### Prompt 2 (Redefinir l’estructura del projecte per parts):
 
 Apply the following folder structure:
 
@@ -54,7 +56,7 @@ Rules to follow:
 - Keep the existing functionality intact while applying this new structure.
 - Each index.ts should re-export the main component so imports stay clean.
 
-Prompt 3 US-01:
+### Prompt 3 US-01:
 
 Refine the existing AddRecipeForm.tsx component. Keep the current props interface 
 (onAddRecipe) and file location unchanged.
@@ -81,7 +83,7 @@ Make these specific improvements:
 
 Do not modify any file outside src/features/add-recipe/.
 
-Prompt 4 US-02:
+### Prompt 4 US-02:
 
 Refine the existing SearchBar.tsx component. Keep the current props interface 
 (searchTerm, onSearchChange) unchanged so App.tsx does not need to change.
@@ -108,7 +110,7 @@ Make these specific improvements:
 
 Do not modify any other shared or feature file.
 
-Prompt 5 US-03:
+### Prompt 5 US-03:
 
 Refine the existing EditRecipeForm.tsx component. Keep the current props interface 
 (recipe, onSave, onCancel) unchanged.
@@ -134,7 +136,7 @@ Make these specific improvements:
 
 Do not modify any file outside src/features/edit-recipe/.
 
-Prompt 6 US-04:
+### Prompt 6 US-04:
 
 Refine the existing DeleteRecipeButton.tsx component. Keep the current props 
 interface (recipeId, onDelete) unchanged so App.tsx does not need to change.
@@ -159,10 +161,28 @@ Make these specific improvements:
 Do not modify any file outside src/features/delete-recipe/.
 
 
-Captures de pantalla del resultat:
+## Captures de pantalla del resultat:
 
-Reflexió sobre l'ús de GitHub Copilot:
+### US-01. Afegir noves receptes
+<img width="1042" height="542" alt="image" src="https://github.com/user-attachments/assets/c4cfd53b-31b0-45db-9253-0cffd146cc45" />
+
+### US-02. Cercar receptes
+<img width="1038" height="723" alt="image" src="https://github.com/user-attachments/assets/80b0aa6b-e0ba-4701-a157-3227e9416dc8" />
+
+### US-03. Editar receptes
+<img width="476" height="881" alt="image" src="https://github.com/user-attachments/assets/5d7ba5f6-c9d1-402b-a1a7-bfa8a8764866" />
+
+### US-04. Eliminar receptes
+<img width="556" height="450" alt="image" src="https://github.com/user-attachments/assets/c072f16f-8fa4-4868-adc0-ae1b123607ba" />
+<img width="557" height="366" alt="image" src="https://github.com/user-attachments/assets/ac7dc352-9851-44d4-a13d-bc38ca0812dd" />
+
+
+
+
+## Reflexió sobre l'ús de GitHub Copilot:
 
 GitHub Copilot ha resultat ser una eina molt útil a l'hora de desenvolupar aquesta aplicació, ja que ha permès agilitzar significativament la generació de codi a partir dels requisits funcionals. Gràcies als prompts, hem pogut obtenir components funcionals en molt poc temps i centrar-nos més en el disseny de la solució que no pas en la implementació detallada.
+
 Tot i això, hem après que cal anar amb molta cura i revisar sempre els resultats de cada prompt abans d'acceptar-los. En diverses ocasions hem observat que Copilot fa més feina de la que se li demana: modifica fitxers que no s'han especificat, afegeix funcionalitats no sol·licitades o reestructura codi que ja funcionava correctament. Com que té la capacitat d'editar arxius directament al projecte, un canvi no revisat pot trencar parts de l'aplicació que estaven funcionant o generar conflictes innecessaris entre els membres de l'equip.
+
 Per aquest motiu, la conclusió principal és que Copilot és una eina poderosa però que requereix supervisió constant. La qualitat del resultat depèn tant de la precisió dels prompts com de la revisió crítica del codi generat.
