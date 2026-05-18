@@ -19,6 +19,7 @@ can be developed independently by different team members with minimal merge conf
 
 Apply the following folder structure:
 
+```
 src/
 ├── features/
 │   ├── add-recipe/         ← US-01
@@ -47,6 +48,7 @@ src/
 │   └── utils/
 │       └── storage.ts      ← get/save/delete helpers for localStorage
 └── App.tsx                 ← only imports and composes the 4 features
+```
 
 Rules to follow:
 - Each feature folder must be self-contained: its own component, styles and index.ts export.
